@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+
+                // Multiple Choice
+                let correct = document.querySelector("#correct");
+
+                correct.addEventListener("click", function () {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector("#mc-feedback").innerHTML = "Correct!";
+                });
+
+                let incorrects = document.querySelectorAll(".incorrect");
+
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener("click", function () {
+                        incorrects[i].style.backgroundColor = "red";
+                        document.querySelector("#mc-feedback").innerHTML = "Incorrect";
+                    });
+                }
+
+                // Free Response
+                document.querySelector("#check").addEventListener("click", function () {
+
+                    let answer = document.querySelector("#answer");
+
+                    if (answer.value.trim().toLowerCase() === "paris") {
+                        answer.style.backgroundColor = "green";
+                        document.querySelector("#fr-feedback").innerHTML = "Correct!";
+                    }
+                    else {
+                        answer.style.backgroundColor = "red";
+                        document.querySelector("#fr-feedback").innerHTML = "Incorrect";
+                    }
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <!-- Part 1 -->
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+
+                <h3>Which planet is known as the Red Planet?</h3>
+
+                <button class="incorrect">Earth</button>
+                <button class="incorrect">Venus</button>
+                <button id="correct">Mars</button>
+                <button class="incorrect">Jupiter</button>
+
+                <p id="mc-feedback"></p>
+            </div>
+
+            <!-- Part 2 -->
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <h3>What is the capital city of France?</h3>
+
+                <input type="text" id="answer">
+                <button id="check">Check Answer</button>
+
+                <p id="fr-feedback"></p>
+            </div>
+
+        </div>
+    </body>
+</html>
