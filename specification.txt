@@ -1,0 +1,43 @@
+HTML Tags Used:
+
+1. h1
+2. h3
+3. p
+4. nav
+5. a
+6. div
+7. ul
+8. li
+9. table
+10. input
+11. textarea
+
+CSS Selectors Used:
+
+1. body
+2. h1
+3. .container
+4. .contact-box
+5. #response
+
+CSS Properties Used:
+
+1. font-family
+2. background-color
+3. color
+4. margin
+5. padding
+6. border-radius
+7. box-shadow
+8. font-weight
+9. max-width
+10. text-align
+
+Bootstrap:
+Bootstrap was used to create a responsive navigation bar, styled buttons, tables, containers, and form controls. These components help ensure the website is visually appealing and responsive across desktops, tablets, and mobile devices.
+
+JavaScript:
+JavaScript was used to add interactivity to the website in two ways:
+
+1. A Fun Facts Generator displays a random technology-related fact each time the user clicks a button on the homepage.
+2. A Contact Form validates user input by ensuring that the Name, Email, and Message fields are completed and that the email address follows a valid format. If the form is completed correctly, a personalized confirmation message is displayed; otherwise, an error message is shown.

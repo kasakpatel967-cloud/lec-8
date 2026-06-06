@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+</nav>
+
+<div class="container">
+
+    <h1>My Hobbies</h1>
+
+    <ol>
+        <li>Coding</li>
+        <li>Reading</li>
+        <li>Gaming</li>
+        <li>Music</li>
+    </ol>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>Hobby</th>
+            <th>Hours/Week</th>
+        </tr>
+        <tr>
+            <td>Coding</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>Reading</td>
+            <td>5</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

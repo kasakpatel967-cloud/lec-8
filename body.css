@@ -1,0 +1,77 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1
+{
+    color: navy;
+}
+
+.container
+{
+    margin-top: 20px;
+}
+
+.navbar-brand
+{
+    font-weight: bold;
+}
+
+.dark-mode
+{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li
+{
+    color: white;
+}
+
+.dark-mode table
+{
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container
+{
+    background-color: #121212;
+}
+
+table
+{
+    background-color: white;
+}
+.contact-box
+{
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box h1
+{
+    color: navy;
+}
+
+#response
+{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-control:focus
+{
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
